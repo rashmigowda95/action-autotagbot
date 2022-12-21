@@ -27,5 +27,20 @@
     "@actions/core": "^1.2.4",
     "@actions/github": "^2.2.0",
     "semver": "^7.3.2"
-  }
+  },
+  "auto-changelog": {
+    "commitLimit": false,
+    "unreleased": true,
+    "issueUrl": "https://rashmingowda95.atlassian.net/browse/{id}",
+    "replaceText": {
+      "[Ff]eature:": "",
+      "[Ff]ix:": "",
+      "[Bb]reak:": "",
+      "([A-Z]+-\\d+)": "[$1](https://rashmingowda95.atlassian.net/browse/$1) - "
+    },
+    "includeBranch": [
+      "develop",
+      "master"
+    ]
+}
 }
