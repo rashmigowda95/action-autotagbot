@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Valtech</Authors>
+    <Version>3.6.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+ <PackageReference Include="B2B.Core" Version="4.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\Models\AddMember\" />
+    <Folder Include="Services\Models\GetMemberDetails\" />
+  </ItemGroup>
+
+</Project>
